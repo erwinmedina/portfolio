@@ -1,7 +1,10 @@
+h2 {
+    text-align: center;
+}
 .project {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
     height: auto;
     width: 80%;
     border: solid black 1px;
@@ -17,15 +20,25 @@
 }
 
 .projectText {
+    position: relative;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonContainer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.buttonContainer a {
+    margin-right: 15px;
 }
 
 .interest {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "header header header"
-        "main1 main2 main3"
-
+    display: flex;
+    justify-content: space-around;
 }
