@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
@@ -19,12 +24,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    
+    <!-- Import css/js -->
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
     <title>Erwin's Portfolio</title>
 
 <body>
-    <nav>
+    <nav class="container">
         <a href="#projects">Projects</a>
         <a href="#interests">Interests</a>
         <a href="#contact">Contact</a>
@@ -32,9 +39,10 @@
     <div class="header">
         <h1>Erwin Medina</h1>
         <h3>Software Developer</h3>
-        <h5>An applied mathematician with a passion for programming<br>I love clean and concise code. Check out my projects below!</h5>
+        <h5>An applied mathematician with a passion for programming<br>
+            I love clean and concise code. Check out my projects below!</h5>
     </div>
-    <div class="container">
+    <div class="container wholeThing">
         <div class="aboutMe">
             <div class="topTerminal">
                 <div class="circle" id="red"></div>
@@ -48,15 +56,17 @@
                 </div>
                 <div>
                     <br><span class="first">> Erwin.contactInfo</span><br>
-                    <span>["<a href="https://www.linkedin.com/in/erwinmedina/" target="_blank">erwin.l.medina@gmail.com</a>", "<a href="https://github.com/erwinmedina" target="_blank">LinkedIn</a>", "<a href="https://github.com/erwinmedina" target="_blank">Github</a>"]</span>
+                    ["<a href="mailto:erwin.l.media@gmail.com" target="_blank">erwin.l.medina@gmail.com</a>", 
+                        "<a href="https://www.linkedin.com/in/erwinmedina/" target="_blank">LinkedIn</a>", 
+                        "<a href="https://github.com/erwinmedina" target="_blank">Github</a>", "909-503-2834"]
                 </div>
                 <div>
                     <br><span class="first">> Erwin.education</span><br>
-                    <span>["General Assembly - 2021", "UC Irvine - Applied Mathematics - 2017"]</span>
+                    ["General Assembly - 2021", "UC Irvine - Applied Mathematics - 2017"]
                 </div>
                 <div>
                     <br><span class="first">> Erwin.resume</span><br>
-                    <span>"<a href="./pdf/20210517 Erwin Medina Resume.pdf" target="_blank">erwinmedina.pdf</a>"</span>
+                    "<a href="./pdf/20210517 Erwin Medina Resume.pdf" target="_blank">erwinmedina.pdf</a>"
                 </div>
                 <div>
                     <br><span class="first">></span>
@@ -69,9 +79,9 @@
                 <i class="devicon-css3-plain-wordmark colored"></i>
                 <i class="devicon-javascript-plain colored"></i>
                 <i class="devicon-python-plain-wordmark colored"></i>
-                <i class="devicon-django-plain-wordmark colored"></i>
-                <i class="devicon-mongodb-plain-wordmark colored"></i>
-                <i class="devicon-express-original-wordmark colored"></i>
+                <i class="devicon-django-plain-wordmark"></i>
+                <i class="devicon-mongodb-plain-wordmark"></i>
+                <i class="devicon-express-original-wordmark"></i>
                 <i class="devicon-react-original-wordmark colored"></i>
                 <i class="devicon-nodejs-plain colored"></i>
                 <i class="devicon-github-original"></i>
@@ -81,14 +91,15 @@
                 <i class="devicon-heroku-original-wordmark colored"></i>
             </div>
         </div>
-        <div>
-            <h2 id="projects">Projects:</h2>
+        <div id="projects">
+            <h2>Projects:</h2>
             <hr>
             <div class="project">
                 <img class="projectImage" src="images/Mancala.png" alt="">
                 <div class="projectText">
                     <h4>Mancala</h4>
-                    <p>Developed an event driven player vs computer board game. It was my first project under General Assembly, and one of my favorites due to its win/loss logic and style.  </p>
+                    <p>Developed an event driven player vs computer board game. My first project under General
+                        Assembly, and one of my favorites due to its win/loss logic and style! </p>
                     <div class="skillsUsed">
                         <div class="btn btn-sm btn-outline-secondary">HTML</div>
                         <div class="btn btn-sm btn-outline-secondary">CSS/Bootstrap</div>
@@ -96,8 +107,10 @@
                         <div class="btn btn-sm btn-outline-secondary">jQuery</div>
                     </div>
                     <div class="buttonContainer">
-                        <a class="btn btn-sm btn-primary" href="https://erwinmedina.github.io/mancala/" target="_blank">Live Demo</a>
-                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/mancala" target="_blank">Github</a>
+                        <a class="btn btn-sm btn-primary" href="https://erwinmedina.github.io/mancala/"
+                            target="_blank">Live Demo</a>
+                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/mancala"
+                            target="_blank">Github</a>
                     </div>
                 </div>
 
@@ -106,7 +119,9 @@
                 <div><img class="projectImage" src="images/Liverpool.png" alt=""></div>
                 <div class="projectText">
                     <h4>Liverpool Cafe</h4>
-                    <p>Developed an event driven player vs computer board game. It was my first project under General Assembly, and one of my favorites due to its win/loss logic and style.  </p>
+                    <p>Developed a Mongoose-Express-Node (MEN) stack CRUD application for blogging and communication. 
+                        I wanted to share my love for football with others so I created a place to share ideas or 
+                        thoughts about Liverpool players! </p>
                     <div class="skillsUsed">
                         <div class="btn btn-sm btn-outline-secondary">Mongoose/MongoDB</div>
                         <div class="btn btn-sm btn-outline-secondary">Express</div>
@@ -116,8 +131,10 @@
                         <div class="btn btn-sm btn-outline-secondary">Heroku</div>
                     </div>
                     <div class="buttonContainer">
-                        <a class="btn btn-sm btn-primary" href="https://liverpool-cafe.herokuapp.com/" target="_blank">Live Demo</a>
-                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/liverpool-cafe" target="_blank">Github</a>
+                        <a class="btn btn-sm btn-primary" href="https://liverpool-cafe.herokuapp.com/"
+                            target="_blank">Live Demo</a>
+                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/liverpool-cafe"
+                            target="_blank">Github</a>
                     </div>
                 </div>
             </div>
@@ -125,7 +142,10 @@
                 <div><img class="projectImage" src="images/Pet.png" alt=""></div>
                 <div class="projectText">
                     <h4>Pet Transfer</h4>
-                    <p>Developed an event driven player vs computer board game. It was my first project under General Assembly, and one of my favorites due to its win/loss logic and style.  </p>
+                    <p>A Mongoose-Express-React-Node (MERN) stack CRUD application. The purpose of said app is to 
+                        create a form of communication between a pet owner who wants/needs to give up their pet, 
+                        and someone who is looking for a particular pet. It beats leaving your pet at a shelter!
+                    </p>
                     <div class="skillsUsed">
                         <div class="btn btn-sm btn-outline-secondary">Mongoose/MongoDB</div>
                         <div class="btn btn-sm btn-outline-secondary">Express</div>
@@ -136,8 +156,10 @@
                         <div class="btn btn-sm btn-outline-secondary">Heroku</div>
                     </div>
                     <div class="buttonContainer">
-                        <a class="btn btn-sm btn-primary" href="https://erwinmedina.github.io/mancala/" target="_blank">Live Demo</a>
-                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/pet-transfer" target="_blank">Github</a>
+                        <a class="btn btn-sm btn-primary" href="https://erwinmedina.github.io/mancala/"
+                            target="_blank">Live Demo</a>
+                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/pet-transfer"
+                            target="_blank">Github</a>
                     </div>
                 </div>
             </div>
@@ -145,21 +167,23 @@
                 <div><img class="projectImage" src="images/TicTacToe.png" alt=""></div>
                 <div class="projectText">
                     <h4>Tic Tac Toe</h4>
-                    <p>Developed an event driven player vs computer board game. It was my first project under General Assembly, and one of my favorites due to its win/loss logic and style.  </p>
+                    <p>A standard event driven application. It keeps track of the score through its win/loss logic and
+                        another one of my favorites! </p>
                     <div class="skillsUsed">
                         <div class="btn btn-sm btn-outline-secondary">HTML</div>
                         <div class="btn btn-sm btn-outline-secondary">CSS/Bootstrap</div>
                         <div class="btn btn-sm btn-outline-secondary">Javascript</div>
                     </div>
                     <div class="buttonContainer">
-                        <a class="btn btn-sm btn-primary" href="" target="_blank">Live Demo</a>
-                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/tic-tac-toe" target="_blank">Github</a>
+                        <a class="btn btn-sm btn-primary" href="https://erwinmedina.github.io/tic-tac-toe/" target="_blank">Live Demo</a>
+                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/tic-tac-toe"
+                            target="_blank">Github</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <h2 id="interests">Interests:</h2>
+        <div id="interests">
+            <h2>Interests:</h2>
             <hr>
             <div class="interest">
                 <div class="card" style="width: 18rem;">
@@ -174,7 +198,8 @@
                     <img class="card-img-top" src="./images/Rocket League.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Video Games</h5>
-                        <p class="card-text">My passion for role playing games knows no bounds. Complex, well developed stories
+                        <p class="card-text">My passion for role playing games knows no bounds. Complex, well developed
+                            stories
                             capture my attention. Aside from that, I'm also a champ in Rocket League.</p>
                     </div>
                 </div>
@@ -188,19 +213,19 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <h2 id="contact">Contact:</h2>
+        <div id="contact" class="footer">
+            <h2>Contact:</h2>
             <hr>
             <div class="footerContent">
-                <p>Erwin Medina<br>erwin.l.medina@gmail.com<br>Irvine, CA<br>909-503-2834</p>
                 <div class="contactContainer">
-                    <a href="https://www.linkedin.com/in/erwinmedina/" class="devicon-linkedin-plain" target="_blank"></a>
-                    <a href="https://github.com/erwinmedina" class="devicon-github-original" target="_blank"></a>
                     <a href="mailto:erwin.l.media@gmail.com" class="devicon-google-plain" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/erwinmedina/" class="devicon-linkedin-plain"
+                        target="_blank"></a>
+                    <a href="https://github.com/erwinmedina" class="devicon-github-original" target="_blank"></a>
                 </div>
-                
             </div>
         </div>
-        </body>
+    </div>
+</body>
 
 </html>
