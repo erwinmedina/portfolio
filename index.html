@@ -24,24 +24,10 @@
     <title>Erwin's Portfolio</title>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-center navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
     </nav>
     <div class="header">
         <h1>Erwin Medina</h1>
@@ -62,7 +48,7 @@
                 </div>
                 <div>
                     <br><span class="first">> Erwin.contactInfo</span><br>
-                    <span>["erwin.l.medina@gmail.com", "LinkedIn", "Github"]</span>
+                    <span>["<a href="https://www.linkedin.com/in/erwinmedina/" target="_blank">erwin.l.medina@gmail.com</a>", "<a href="https://github.com/erwinmedina" target="_blank">LinkedIn</a>", "<a href="https://github.com/erwinmedina" target="_blank">Github</a>"]</span>
                 </div>
                 <div>
                     <br><span class="first">> Erwin.education</span><br>
@@ -70,10 +56,10 @@
                 </div>
                 <div>
                     <br><span class="first">> Erwin.resume</span><br>
-                    <span>"DOCUMENT GOES HERE"</span>
+                    <span>"<a href="./pdf/20210517 Erwin Medina Resume.pdf" target="_blank">erwinmedina.pdf</a>"</span>
                 </div>
                 <div>
-                    <br><span>></span>
+                    <br><span class="first">></span>
                 </div>
             </div>
         </div>
@@ -96,7 +82,7 @@
             </div>
         </div>
         <div>
-            <h2>Projects:</h2>
+            <h2 id="projects">Projects:</h2>
             <hr>
             <div class="project">
                 <img class="projectImage" src="images/Mancala.png" alt="">
@@ -110,8 +96,8 @@
                         <div class="btn btn-sm btn-outline-secondary">jQuery</div>
                     </div>
                     <div class="buttonContainer">
-                        <a class="btn btn-sm btn-primary" href="https://erwinmedina.github.io/mancala/">Live Demo</a>
-                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/mancala">Github</a>
+                        <a class="btn btn-sm btn-primary" href="https://erwinmedina.github.io/mancala/" target="_blank">Live Demo</a>
+                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/mancala" target="_blank">Github</a>
                     </div>
                 </div>
 
@@ -130,8 +116,8 @@
                         <div class="btn btn-sm btn-outline-secondary">Heroku</div>
                     </div>
                     <div class="buttonContainer">
-                        <a class="btn btn-sm btn-primary" href="https://liverpool-cafe.herokuapp.com/">Live Demo</a>
-                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/liverpool-cafe">Github</a>
+                        <a class="btn btn-sm btn-primary" href="https://liverpool-cafe.herokuapp.com/" target="_blank">Live Demo</a>
+                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/liverpool-cafe" target="_blank">Github</a>
                     </div>
                 </div>
             </div>
@@ -150,8 +136,8 @@
                         <div class="btn btn-sm btn-outline-secondary">Heroku</div>
                     </div>
                     <div class="buttonContainer">
-                        <a class="btn btn-sm btn-primary" href="https://erwinmedina.github.io/mancala/">Live Demo</a>
-                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/pet-transfer">Github</a>
+                        <a class="btn btn-sm btn-primary" href="https://erwinmedina.github.io/mancala/" target="_blank">Live Demo</a>
+                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/pet-transfer" target="_blank">Github</a>
                     </div>
                 </div>
             </div>
@@ -166,14 +152,14 @@
                         <div class="btn btn-sm btn-outline-secondary">Javascript</div>
                     </div>
                     <div class="buttonContainer">
-                        <a class="btn btn-sm btn-primary" href="">Live Demo</a>
-                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/tic-tac-toe">Github</a>
+                        <a class="btn btn-sm btn-primary" href="" target="_blank">Live Demo</a>
+                        <a class="btn btn-sm btn-primary" href="https://github.com/erwinmedina/tic-tac-toe" target="_blank">Github</a>
                     </div>
                 </div>
             </div>
         </div>
         <div>
-            <h2>Interests:</h2>
+            <h2 id="interests">Interests:</h2>
             <hr>
             <div class="interest">
                 <div class="card" style="width: 18rem;">
@@ -202,10 +188,19 @@
                 </div>
             </div>
         </div>
-        <div>
-            <h2>Contact:</h2>
+        <div class="footer">
+            <h2 id="contact">Contact:</h2>
             <hr>
+            <div class="footerContent">
+                <p>Erwin Medina<br>erwin.l.medina@gmail.com<br>Irvine, CA<br>909-503-2834</p>
+                <div class="contactContainer">
+                    <a href="https://www.linkedin.com/in/erwinmedina/" class="devicon-linkedin-plain" target="_blank"></a>
+                    <a href="https://github.com/erwinmedina" class="devicon-github-original" target="_blank"></a>
+                    <a href="mailto:erwin.l.media@gmail.com" class="devicon-google-plain" target="_blank"></a>
+                </div>
+                
+            </div>
         </div>
-</body>
+        </body>
 
 </html>
