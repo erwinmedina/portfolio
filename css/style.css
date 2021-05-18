@@ -184,3 +184,34 @@ nav a:hover {
 .contactContainer a:hover {
     text-decoration: none;
 }
+
+@media (max-width: 1000px) {
+    nav a {
+        margin: 1.2em;
+    }
+    .project {
+        border-radius: 10px;
+        grid-template-columns: 1fr;
+    }
+    .projectText {
+        border-radius: 10px;
+    }
+
+    .project img {
+        display: none;
+    }
+    .buttonContainer {
+        position: relative;
+    }
+    .buttonContainer a {
+        margin: 3px;
+    }
+    .interest {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        margin: 20px;
+    }
+}
