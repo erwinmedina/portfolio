@@ -28,6 +28,7 @@ p {
 a {
     transition: 1s;
 }
+
 a:hover {
     text-decoration: none;
     color: white;
@@ -84,6 +85,7 @@ nav a:hover {
 .terminal {
     word-spacing: 3px;
     color: rgba(0,255,0, .8);
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,.3);
     background-color: black;
     margin: 0 auto;
     width: 80%;
@@ -161,6 +163,7 @@ nav a:hover {
 
 .skillsUsed div {
     margin: 3px;
+    cursor: default !important;
 }
 
 .footer {
